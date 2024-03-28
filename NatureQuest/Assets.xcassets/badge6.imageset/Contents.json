@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "Badge 9 13.52.08 13.52.08 13.52.08.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "Badge 9@2x 13.52.08 13.52.08 13.52.08.png",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "Badge 9@3x 13.52.08 13.52.08 13.52.08.png",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

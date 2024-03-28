@@ -1,0 +1,989 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		191938E72B9F97ED0096CD32 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191938E62B9F97ED0096CD32 /* AuthenticationView.swift */; };
+		192EBBF82BA8951F00E81A7A /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192EBBF72BA8951F00E81A7A /* LocationManager.swift */; };
+		192EBBFA2BA8B22C00E81A7A /* temp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192EBBF92BA8B22C00E81A7A /* temp.swift */; };
+		196674592B9F6F2500FC814B /* Preview Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196674582B9F6F2500FC814B /* Preview Content.swift */; };
+		1966745B2B9F76BA00FC814B /* PostDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1966745A2B9F76BA00FC814B /* PostDetailsView.swift */; };
+		196F02472B9E1DDC005CD9EF /* NatureQuestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196F02462B9E1DDC005CD9EF /* NatureQuestApp.swift */; };
+		196F02492B9E1DDC005CD9EF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196F02482B9E1DDC005CD9EF /* ContentView.swift */; };
+		196F024B2B9E1DDE005CD9EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 196F024A2B9E1DDE005CD9EF /* Assets.xcassets */; };
+		196F024E2B9E1DDE005CD9EF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 196F024D2B9E1DDE005CD9EF /* Preview Assets.xcassets */; };
+		196F02582B9E1DDE005CD9EF /* NatureQuestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196F02572B9E1DDE005CD9EF /* NatureQuestTests.swift */; };
+		196F02622B9E1DDE005CD9EF /* NatureQuestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196F02612B9E1DDE005CD9EF /* NatureQuestUITests.swift */; };
+		196F02642B9E1DDE005CD9EF /* NatureQuestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196F02632B9E1DDE005CD9EF /* NatureQuestUITestsLaunchTests.swift */; };
+		196F02712B9E1E0A005CD9EF /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196F02702B9E1E0A005CD9EF /* MainTabView.swift */; };
+		196F02742B9E20C1005CD9EF /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196F02732B9E20C1005CD9EF /* ProfileView.swift */; };
+		196F02762B9E2D18005CD9EF /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196F02752B9E2D18005CD9EF /* HomeView.swift */; };
+		196F02782B9E2D23005CD9EF /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196F02772B9E2D23005CD9EF /* PostView.swift */; };
+		196F027B2B9E3789005CD9EF /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196F027A2B9E3789005CD9EF /* LoginView.swift */; };
+		196F027F2B9E3C34005CD9EF /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196F027E2B9E3C34005CD9EF /* SignUpView.swift */; };
+		196F02812B9E4163005CD9EF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196F02802B9E4163005CD9EF /* User.swift */; };
+		196F02832B9E44C0005CD9EF /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196F02822B9E44C0005CD9EF /* Post.swift */; };
+		196F02852B9E62C0005CD9EF /* ObservationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196F02842B9E62C0005CD9EF /* ObservationView.swift */; };
+		196F02872B9E69E4005CD9EF /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196F02862B9E69E4005CD9EF /* ImagePicker.swift */; };
+		196F028C2B9E6E54005CD9EF /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 196F028B2B9E6E54005CD9EF /* FirebaseAuth */; };
+		196F028E2B9E6E54005CD9EF /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 196F028D2B9E6E54005CD9EF /* FirebaseFirestore */; };
+		196F02902B9E6E54005CD9EF /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 196F028F2B9E6E54005CD9EF /* FirebaseStorage */; };
+		196F02932B9E6E82005CD9EF /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 196F02922B9E6E82005CD9EF /* FirebaseFirestoreSwift */; };
+		196F02952B9E6F80005CD9EF /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196F02942B9E6F80005CD9EF /* AuthService.swift */; };
+		196F02972B9E7117005CD9EF /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196F02962B9E7117005CD9EF /* ContentViewModel.swift */; };
+		196F02992B9E7EDC005CD9EF /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196F02982B9E7EDC005CD9EF /* RegistrationViewModel.swift */; };
+		196F029B2B9E8639005CD9EF /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196F029A2B9E8639005CD9EF /* LoginViewModel.swift */; };
+		196F029D2B9E8DA1005CD9EF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 196F029C2B9E8DA1005CD9EF /* GoogleService-Info.plist */; };
+		196F029F2B9E947C005CD9EF /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196F029E2B9E947C005CD9EF /* SearchView.swift */; };
+		196F02A12B9E9869005CD9EF /* CurrentUserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196F02A02B9E9869005CD9EF /* CurrentUserProfileView.swift */; };
+		196F02A52B9E9DB1005CD9EF /* PostGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196F02A42B9E9DB1005CD9EF /* PostGridView.swift */; };
+		196F02A72B9E9FD4005CD9EF /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196F02A62B9E9FD4005CD9EF /* ProfileHeaderView.swift */; };
+		196F02A92B9EA32C005CD9EF /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196F02A82B9EA32C005CD9EF /* UserService.swift */; };
+		196F02AB2B9EA3F3005CD9EF /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196F02AA2B9EA3F3005CD9EF /* SearchViewModel.swift */; };
+		196F02AD2B9F0CF0005CD9EF /* EditiProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196F02AC2B9F0CF0005CD9EF /* EditiProfileView.swift */; };
+		196F02AF2B9F13B9005CD9EF /* EditProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196F02AE2B9F13B9005CD9EF /* EditProfileViewModel.swift */; };
+		196F02B12B9F16E1005CD9EF /* UploadPostViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196F02B02B9F16E1005CD9EF /* UploadPostViewModel.swift */; };
+		196F02B32B9F25FB005CD9EF /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196F02B22B9F25FB005CD9EF /* ImageUploader.swift */; };
+		196F02B62B9F39FB005CD9EF /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 196F02B52B9F39FB005CD9EF /* Kingfisher */; };
+		196F02BA2B9F3AC0005CD9EF /* CircularProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196F02B92B9F3AC0005CD9EF /* CircularProfileImageView.swift */; };
+		196F02BC2B9F4EB3005CD9EF /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196F02BB2B9F4EB3005CD9EF /* FeedViewModel.swift */; };
+		196F02BE2B9F568B005CD9EF /* PostService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196F02BD2B9F568B005CD9EF /* PostService.swift */; };
+		196F02C02B9F5A0E005CD9EF /* PostGridViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196F02BF2B9F5A0E005CD9EF /* PostGridViewModel.swift */; };
+		196F2F2A2BA6FE5A005CF8A7 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196F2F292BA6FE5A005CF8A7 /* MapViewModel.swift */; };
+		1971569B2B9FE02300FE4F2B /* SuccessView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1971569A2B9FE02300FE4F2B /* SuccessView.swift */; };
+		1971569D2B9FEC8200FE4F2B /* IdentifyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1971569C2B9FEC8200FE4F2B /* IdentifyView.swift */; };
+		1971569F2B9FF27200FE4F2B /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1971569E2B9FF27200FE4F2B /* MapView.swift */; };
+		19BABEEF2B9FC91E0058C04E /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 19BABEEE2B9FC91E0058C04E /* FirebaseAnalytics */; };
+		19BEF9392BA220B700B7F2BB /* Raleway-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 19BEF9262BA220B700B7F2BB /* Raleway-Black.ttf */; };
+		19BEF93A2BA220B700B7F2BB /* Raleway-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 19BEF9272BA220B700B7F2BB /* Raleway-BlackItalic.ttf */; };
+		19BEF93B2BA220B700B7F2BB /* Raleway-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 19BEF9282BA220B700B7F2BB /* Raleway-Bold.ttf */; };
+		19BEF93C2BA220B700B7F2BB /* Raleway-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 19BEF9292BA220B700B7F2BB /* Raleway-BoldItalic.ttf */; };
+		19BEF93D2BA220B700B7F2BB /* Raleway-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 19BEF92A2BA220B700B7F2BB /* Raleway-ExtraBold.ttf */; };
+		19BEF93E2BA220B700B7F2BB /* Raleway-ExtraBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 19BEF92B2BA220B700B7F2BB /* Raleway-ExtraBoldItalic.ttf */; };
+		19BEF93F2BA220B700B7F2BB /* Raleway-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 19BEF92C2BA220B700B7F2BB /* Raleway-ExtraLight.ttf */; };
+		19BEF9402BA220B700B7F2BB /* Raleway-ExtraLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 19BEF92D2BA220B700B7F2BB /* Raleway-ExtraLightItalic.ttf */; };
+		19BEF9412BA220B700B7F2BB /* Raleway-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 19BEF92E2BA220B700B7F2BB /* Raleway-Italic.ttf */; };
+		19BEF9422BA220B700B7F2BB /* Raleway-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 19BEF92F2BA220B700B7F2BB /* Raleway-Light.ttf */; };
+		19BEF9432BA220B700B7F2BB /* Raleway-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 19BEF9302BA220B700B7F2BB /* Raleway-LightItalic.ttf */; };
+		19BEF9442BA220B700B7F2BB /* Raleway-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 19BEF9312BA220B700B7F2BB /* Raleway-Medium.ttf */; };
+		19BEF9452BA220B700B7F2BB /* Raleway-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 19BEF9322BA220B700B7F2BB /* Raleway-MediumItalic.ttf */; };
+		19BEF9462BA220B700B7F2BB /* Raleway-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 19BEF9332BA220B700B7F2BB /* Raleway-Regular.ttf */; };
+		19BEF9472BA220B700B7F2BB /* Raleway-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 19BEF9342BA220B700B7F2BB /* Raleway-SemiBold.ttf */; };
+		19BEF9482BA220B700B7F2BB /* Raleway-SemiBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 19BEF9352BA220B700B7F2BB /* Raleway-SemiBoldItalic.ttf */; };
+		19BEF9492BA220B700B7F2BB /* Raleway-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 19BEF9362BA220B700B7F2BB /* Raleway-Thin.ttf */; };
+		19BEF94A2BA220B700B7F2BB /* Raleway-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 19BEF9372BA220B700B7F2BB /* Raleway-ThinItalic.ttf */; };
+		19BEF94D2BA23D0D00B7F2BB /* Merriweather-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 19BEF94C2BA23D0D00B7F2BB /* Merriweather-Regular.ttf */; };
+		19BEF94F2BA26FC300B7F2BB /* SuccessViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19BEF94E2BA26FC300B7F2BB /* SuccessViewModel.swift */; };
+		19DD7ED92BA4AB90003B7A3B /* FilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DD7ED82BA4AB90003B7A3B /* FilterView.swift */; };
+		19DD7EDB2BA4BE28003B7A3B /* IdentifyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DD7EDA2BA4BE28003B7A3B /* IdentifyViewModel.swift */; };
+		19DD7EDE2BA4E0CA003B7A3B /* NotificationBannerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 19DD7EDD2BA4E0CA003B7A3B /* NotificationBannerSwift */; };
+		19DD7EE52BA50989003B7A3B /* SwiftEntryKit in Frameworks */ = {isa = PBXBuildFile; productRef = 19DD7EE42BA50989003B7A3B /* SwiftEntryKit */; };
+		19DD7EE72BA5ECA0003B7A3B /* ProfileHeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DD7EE62BA5ECA0003B7A3B /* ProfileHeaderViewModel.swift */; };
+		19DD7EE92BA61E26003B7A3B /* SuccessViewModelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19DD7EE82BA61E26003B7A3B /* SuccessViewModelManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		196F02542B9E1DDE005CD9EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 196F023B2B9E1DDC005CD9EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 196F02422B9E1DDC005CD9EF;
+			remoteInfo = NatureQuest;
+		};
+		196F025E2B9E1DDE005CD9EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 196F023B2B9E1DDC005CD9EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 196F02422B9E1DDC005CD9EF;
+			remoteInfo = NatureQuest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		191938E62B9F97ED0096CD32 /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
+		192EBBF72BA8951F00E81A7A /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		192EBBF92BA8B22C00E81A7A /* temp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = temp.swift; sourceTree = "<group>"; };
+		196674582B9F6F2500FC814B /* Preview Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Preview Content.swift"; sourceTree = "<group>"; };
+		1966745A2B9F76BA00FC814B /* PostDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsView.swift; sourceTree = "<group>"; };
+		196F02432B9E1DDC005CD9EF /* NatureQuest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NatureQuest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		196F02462B9E1DDC005CD9EF /* NatureQuestApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NatureQuestApp.swift; sourceTree = "<group>"; };
+		196F02482B9E1DDC005CD9EF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		196F024A2B9E1DDE005CD9EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		196F024D2B9E1DDE005CD9EF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		196F02532B9E1DDE005CD9EF /* NatureQuestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NatureQuestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		196F02572B9E1DDE005CD9EF /* NatureQuestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NatureQuestTests.swift; sourceTree = "<group>"; };
+		196F025D2B9E1DDE005CD9EF /* NatureQuestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NatureQuestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		196F02612B9E1DDE005CD9EF /* NatureQuestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NatureQuestUITests.swift; sourceTree = "<group>"; };
+		196F02632B9E1DDE005CD9EF /* NatureQuestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NatureQuestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		196F02702B9E1E0A005CD9EF /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		196F02732B9E20C1005CD9EF /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		196F02752B9E2D18005CD9EF /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		196F02772B9E2D23005CD9EF /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
+		196F027A2B9E3789005CD9EF /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		196F027E2B9E3C34005CD9EF /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		196F02802B9E4163005CD9EF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		196F02822B9E44C0005CD9EF /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		196F02842B9E62C0005CD9EF /* ObservationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservationView.swift; sourceTree = "<group>"; };
+		196F02862B9E69E4005CD9EF /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		196F02942B9E6F80005CD9EF /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		196F02962B9E7117005CD9EF /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		196F02982B9E7EDC005CD9EF /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		196F029A2B9E8639005CD9EF /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		196F029C2B9E8DA1005CD9EF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		196F029E2B9E947C005CD9EF /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		196F02A02B9E9869005CD9EF /* CurrentUserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentUserProfileView.swift; sourceTree = "<group>"; };
+		196F02A42B9E9DB1005CD9EF /* PostGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGridView.swift; sourceTree = "<group>"; };
+		196F02A62B9E9FD4005CD9EF /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
+		196F02A82B9EA32C005CD9EF /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		196F02AA2B9EA3F3005CD9EF /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		196F02AC2B9F0CF0005CD9EF /* EditiProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditiProfileView.swift; sourceTree = "<group>"; };
+		196F02AE2B9F13B9005CD9EF /* EditProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewModel.swift; sourceTree = "<group>"; };
+		196F02B02B9F16E1005CD9EF /* UploadPostViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadPostViewModel.swift; sourceTree = "<group>"; };
+		196F02B22B9F25FB005CD9EF /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
+		196F02B92B9F3AC0005CD9EF /* CircularProfileImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProfileImageView.swift; sourceTree = "<group>"; };
+		196F02BB2B9F4EB3005CD9EF /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		196F02BD2B9F568B005CD9EF /* PostService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostService.swift; sourceTree = "<group>"; };
+		196F02BF2B9F5A0E005CD9EF /* PostGridViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostGridViewModel.swift; sourceTree = "<group>"; };
+		196F2F292BA6FE5A005CF8A7 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		1971569A2B9FE02300FE4F2B /* SuccessView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessView.swift; sourceTree = "<group>"; };
+		1971569C2B9FEC8200FE4F2B /* IdentifyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentifyView.swift; sourceTree = "<group>"; };
+		1971569E2B9FF27200FE4F2B /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		19BEF9262BA220B700B7F2BB /* Raleway-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Black.ttf"; sourceTree = "<group>"; };
+		19BEF9272BA220B700B7F2BB /* Raleway-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-BlackItalic.ttf"; sourceTree = "<group>"; };
+		19BEF9282BA220B700B7F2BB /* Raleway-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Bold.ttf"; sourceTree = "<group>"; };
+		19BEF9292BA220B700B7F2BB /* Raleway-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-BoldItalic.ttf"; sourceTree = "<group>"; };
+		19BEF92A2BA220B700B7F2BB /* Raleway-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ExtraBold.ttf"; sourceTree = "<group>"; };
+		19BEF92B2BA220B700B7F2BB /* Raleway-ExtraBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ExtraBoldItalic.ttf"; sourceTree = "<group>"; };
+		19BEF92C2BA220B700B7F2BB /* Raleway-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ExtraLight.ttf"; sourceTree = "<group>"; };
+		19BEF92D2BA220B700B7F2BB /* Raleway-ExtraLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ExtraLightItalic.ttf"; sourceTree = "<group>"; };
+		19BEF92E2BA220B700B7F2BB /* Raleway-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Italic.ttf"; sourceTree = "<group>"; };
+		19BEF92F2BA220B700B7F2BB /* Raleway-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Light.ttf"; sourceTree = "<group>"; };
+		19BEF9302BA220B700B7F2BB /* Raleway-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-LightItalic.ttf"; sourceTree = "<group>"; };
+		19BEF9312BA220B700B7F2BB /* Raleway-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Medium.ttf"; sourceTree = "<group>"; };
+		19BEF9322BA220B700B7F2BB /* Raleway-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-MediumItalic.ttf"; sourceTree = "<group>"; };
+		19BEF9332BA220B700B7F2BB /* Raleway-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Regular.ttf"; sourceTree = "<group>"; };
+		19BEF9342BA220B700B7F2BB /* Raleway-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-SemiBold.ttf"; sourceTree = "<group>"; };
+		19BEF9352BA220B700B7F2BB /* Raleway-SemiBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-SemiBoldItalic.ttf"; sourceTree = "<group>"; };
+		19BEF9362BA220B700B7F2BB /* Raleway-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-Thin.ttf"; sourceTree = "<group>"; };
+		19BEF9372BA220B700B7F2BB /* Raleway-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Raleway-ThinItalic.ttf"; sourceTree = "<group>"; };
+		19BEF94B2BA2219300B7F2BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		19BEF94C2BA23D0D00B7F2BB /* Merriweather-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Merriweather-Regular.ttf"; sourceTree = "<group>"; };
+		19BEF94E2BA26FC300B7F2BB /* SuccessViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessViewModel.swift; sourceTree = "<group>"; };
+		19DD7ED82BA4AB90003B7A3B /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
+		19DD7EDA2BA4BE28003B7A3B /* IdentifyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentifyViewModel.swift; sourceTree = "<group>"; };
+		19DD7EE62BA5ECA0003B7A3B /* ProfileHeaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileHeaderViewModel.swift; path = NatureQuest/ProfileHeaderViewModel.swift; sourceTree = "<group>"; };
+		19DD7EE82BA61E26003B7A3B /* SuccessViewModelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessViewModelManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		196F02402B9E1DDC005CD9EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19DD7EDE2BA4E0CA003B7A3B /* NotificationBannerSwift in Frameworks */,
+				196F028C2B9E6E54005CD9EF /* FirebaseAuth in Frameworks */,
+				196F028E2B9E6E54005CD9EF /* FirebaseFirestore in Frameworks */,
+				19BABEEF2B9FC91E0058C04E /* FirebaseAnalytics in Frameworks */,
+				19DD7EE52BA50989003B7A3B /* SwiftEntryKit in Frameworks */,
+				196F02902B9E6E54005CD9EF /* FirebaseStorage in Frameworks */,
+				196F02932B9E6E82005CD9EF /* FirebaseFirestoreSwift in Frameworks */,
+				196F02B62B9F39FB005CD9EF /* Kingfisher in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		196F02502B9E1DDE005CD9EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		196F025A2B9E1DDE005CD9EF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		196F023A2B9E1DDC005CD9EF = {
+			isa = PBXGroup;
+			children = (
+				19DD7EE62BA5ECA0003B7A3B /* ProfileHeaderViewModel.swift */,
+				1971569E2B9FF27200FE4F2B /* MapView.swift */,
+				196F02452B9E1DDC005CD9EF /* NatureQuest */,
+				196F02562B9E1DDE005CD9EF /* NatureQuestTests */,
+				196F02602B9E1DDE005CD9EF /* NatureQuestUITests */,
+				196F02442B9E1DDC005CD9EF /* Products */,
+				196F02912B9E6E82005CD9EF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		196F02442B9E1DDC005CD9EF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				196F02432B9E1DDC005CD9EF /* NatureQuest.app */,
+				196F02532B9E1DDE005CD9EF /* NatureQuestTests.xctest */,
+				196F025D2B9E1DDE005CD9EF /* NatureQuestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		196F02452B9E1DDC005CD9EF /* NatureQuest */ = {
+			isa = PBXGroup;
+			children = (
+				19DD7EE82BA61E26003B7A3B /* SuccessViewModelManager.swift */,
+				19BEF94B2BA2219300B7F2BB /* Info.plist */,
+				19BEF9382BA220B700B7F2BB /* Fonts */,
+				196674582B9F6F2500FC814B /* Preview Content.swift */,
+				196F024D2B9E1DDE005CD9EF /* Preview Assets.xcassets */,
+				196F029C2B9E8DA1005CD9EF /* GoogleService-Info.plist */,
+				196F02462B9E1DDC005CD9EF /* NatureQuestApp.swift */,
+				196F02792B9E3744005CD9EF /* ViewModel */,
+				196F02962B9E7117005CD9EF /* ContentViewModel.swift */,
+				196F02AE2B9F13B9005CD9EF /* EditProfileViewModel.swift */,
+				196F02BB2B9F4EB3005CD9EF /* FeedViewModel.swift */,
+				196F029A2B9E8639005CD9EF /* LoginViewModel.swift */,
+				19BEF94E2BA26FC300B7F2BB /* SuccessViewModel.swift */,
+				196F02BF2B9F5A0E005CD9EF /* PostGridViewModel.swift */,
+				196F02B02B9F16E1005CD9EF /* UploadPostViewModel.swift */,
+				19DD7EDA2BA4BE28003B7A3B /* IdentifyViewModel.swift */,
+				196F02AA2B9EA3F3005CD9EF /* SearchViewModel.swift */,
+				196F02982B9E7EDC005CD9EF /* RegistrationViewModel.swift */,
+				196F024C2B9E1DDE005CD9EF /* View */,
+				191938E62B9F97ED0096CD32 /* AuthenticationView.swift */,
+				19DD7ED82BA4AB90003B7A3B /* FilterView.swift */,
+				196F02B92B9F3AC0005CD9EF /* CircularProfileImageView.swift */,
+				196F02482B9E1DDC005CD9EF /* ContentView.swift */,
+				196F02752B9E2D18005CD9EF /* HomeView.swift */,
+				196F02A02B9E9869005CD9EF /* CurrentUserProfileView.swift */,
+				196F02AC2B9F0CF0005CD9EF /* EditiProfileView.swift */,
+				196F027A2B9E3789005CD9EF /* LoginView.swift */,
+				196F02702B9E1E0A005CD9EF /* MainTabView.swift */,
+				196F02842B9E62C0005CD9EF /* ObservationView.swift */,
+				192EBBF92BA8B22C00E81A7A /* temp.swift */,
+				192EBBF72BA8951F00E81A7A /* LocationManager.swift */,
+				196F02772B9E2D23005CD9EF /* PostView.swift */,
+				1966745A2B9F76BA00FC814B /* PostDetailsView.swift */,
+				1971569C2B9FEC8200FE4F2B /* IdentifyView.swift */,
+				196F02A42B9E9DB1005CD9EF /* PostGridView.swift */,
+				196F02A62B9E9FD4005CD9EF /* ProfileHeaderView.swift */,
+				1971569A2B9FE02300FE4F2B /* SuccessView.swift */,
+				196F02732B9E20C1005CD9EF /* ProfileView.swift */,
+				196F029E2B9E947C005CD9EF /* SearchView.swift */,
+				196F027E2B9E3C34005CD9EF /* SignUpView.swift */,
+				196F02722B9E20AC005CD9EF /* Service */,
+				196F02942B9E6F80005CD9EF /* AuthService.swift */,
+				196F02BD2B9F568B005CD9EF /* PostService.swift */,
+				196F02A82B9EA32C005CD9EF /* UserService.swift */,
+				196F024A2B9E1DDE005CD9EF /* Assets.xcassets */,
+				196F02862B9E69E4005CD9EF /* ImagePicker.swift */,
+				196F02B22B9F25FB005CD9EF /* ImageUploader.swift */,
+				196F02822B9E44C0005CD9EF /* Post.swift */,
+				196F02802B9E4163005CD9EF /* User.swift */,
+			);
+			path = NatureQuest;
+			sourceTree = "<group>";
+		};
+		196F024C2B9E1DDE005CD9EF /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		196F02562B9E1DDE005CD9EF /* NatureQuestTests */ = {
+			isa = PBXGroup;
+			children = (
+				196F02572B9E1DDE005CD9EF /* NatureQuestTests.swift */,
+			);
+			path = NatureQuestTests;
+			sourceTree = "<group>";
+		};
+		196F02602B9E1DDE005CD9EF /* NatureQuestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				196F02612B9E1DDE005CD9EF /* NatureQuestUITests.swift */,
+				196F02632B9E1DDE005CD9EF /* NatureQuestUITestsLaunchTests.swift */,
+			);
+			path = NatureQuestUITests;
+			sourceTree = "<group>";
+		};
+		196F02722B9E20AC005CD9EF /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		196F02792B9E3744005CD9EF /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				196F2F292BA6FE5A005CF8A7 /* MapViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		196F02912B9E6E82005CD9EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		19BEF9382BA220B700B7F2BB /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				19BEF94C2BA23D0D00B7F2BB /* Merriweather-Regular.ttf */,
+				19BEF9262BA220B700B7F2BB /* Raleway-Black.ttf */,
+				19BEF9272BA220B700B7F2BB /* Raleway-BlackItalic.ttf */,
+				19BEF9282BA220B700B7F2BB /* Raleway-Bold.ttf */,
+				19BEF9292BA220B700B7F2BB /* Raleway-BoldItalic.ttf */,
+				19BEF92A2BA220B700B7F2BB /* Raleway-ExtraBold.ttf */,
+				19BEF92B2BA220B700B7F2BB /* Raleway-ExtraBoldItalic.ttf */,
+				19BEF92C2BA220B700B7F2BB /* Raleway-ExtraLight.ttf */,
+				19BEF92D2BA220B700B7F2BB /* Raleway-ExtraLightItalic.ttf */,
+				19BEF92E2BA220B700B7F2BB /* Raleway-Italic.ttf */,
+				19BEF92F2BA220B700B7F2BB /* Raleway-Light.ttf */,
+				19BEF9302BA220B700B7F2BB /* Raleway-LightItalic.ttf */,
+				19BEF9312BA220B700B7F2BB /* Raleway-Medium.ttf */,
+				19BEF9322BA220B700B7F2BB /* Raleway-MediumItalic.ttf */,
+				19BEF9332BA220B700B7F2BB /* Raleway-Regular.ttf */,
+				19BEF9342BA220B700B7F2BB /* Raleway-SemiBold.ttf */,
+				19BEF9352BA220B700B7F2BB /* Raleway-SemiBoldItalic.ttf */,
+				19BEF9362BA220B700B7F2BB /* Raleway-Thin.ttf */,
+				19BEF9372BA220B700B7F2BB /* Raleway-ThinItalic.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		196F02422B9E1DDC005CD9EF /* NatureQuest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 196F02672B9E1DDE005CD9EF /* Build configuration list for PBXNativeTarget "NatureQuest" */;
+			buildPhases = (
+				196F023F2B9E1DDC005CD9EF /* Sources */,
+				196F02402B9E1DDC005CD9EF /* Frameworks */,
+				196F02412B9E1DDC005CD9EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NatureQuest;
+			packageProductDependencies = (
+				196F028B2B9E6E54005CD9EF /* FirebaseAuth */,
+				196F028D2B9E6E54005CD9EF /* FirebaseFirestore */,
+				196F028F2B9E6E54005CD9EF /* FirebaseStorage */,
+				196F02922B9E6E82005CD9EF /* FirebaseFirestoreSwift */,
+				196F02B52B9F39FB005CD9EF /* Kingfisher */,
+				19BABEEE2B9FC91E0058C04E /* FirebaseAnalytics */,
+				19DD7EDD2BA4E0CA003B7A3B /* NotificationBannerSwift */,
+				19DD7EE42BA50989003B7A3B /* SwiftEntryKit */,
+			);
+			productName = NatureQuest;
+			productReference = 196F02432B9E1DDC005CD9EF /* NatureQuest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		196F02522B9E1DDE005CD9EF /* NatureQuestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 196F026A2B9E1DDE005CD9EF /* Build configuration list for PBXNativeTarget "NatureQuestTests" */;
+			buildPhases = (
+				196F024F2B9E1DDE005CD9EF /* Sources */,
+				196F02502B9E1DDE005CD9EF /* Frameworks */,
+				196F02512B9E1DDE005CD9EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				196F02552B9E1DDE005CD9EF /* PBXTargetDependency */,
+			);
+			name = NatureQuestTests;
+			productName = NatureQuestTests;
+			productReference = 196F02532B9E1DDE005CD9EF /* NatureQuestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		196F025C2B9E1DDE005CD9EF /* NatureQuestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 196F026D2B9E1DDE005CD9EF /* Build configuration list for PBXNativeTarget "NatureQuestUITests" */;
+			buildPhases = (
+				196F02592B9E1DDE005CD9EF /* Sources */,
+				196F025A2B9E1DDE005CD9EF /* Frameworks */,
+				196F025B2B9E1DDE005CD9EF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				196F025F2B9E1DDE005CD9EF /* PBXTargetDependency */,
+			);
+			name = NatureQuestUITests;
+			productName = NatureQuestUITests;
+			productReference = 196F025D2B9E1DDE005CD9EF /* NatureQuestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		196F023B2B9E1DDC005CD9EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					196F02422B9E1DDC005CD9EF = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					196F02522B9E1DDE005CD9EF = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 196F02422B9E1DDC005CD9EF;
+					};
+					196F025C2B9E1DDE005CD9EF = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = 196F02422B9E1DDC005CD9EF;
+					};
+				};
+			};
+			buildConfigurationList = 196F023E2B9E1DDC005CD9EF /* Build configuration list for PBXProject "NatureQuest" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 196F023A2B9E1DDC005CD9EF;
+			packageReferences = (
+				196F028A2B9E6E54005CD9EF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				196F02B42B9F39FB005CD9EF /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				19DD7EDC2BA4E0CA003B7A3B /* XCRemoteSwiftPackageReference "NotificationBanner" */,
+				19DD7EE32BA50989003B7A3B /* XCRemoteSwiftPackageReference "SwiftEntryKit" */,
+			);
+			productRefGroup = 196F02442B9E1DDC005CD9EF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				196F02422B9E1DDC005CD9EF /* NatureQuest */,
+				196F02522B9E1DDE005CD9EF /* NatureQuestTests */,
+				196F025C2B9E1DDE005CD9EF /* NatureQuestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		196F02412B9E1DDC005CD9EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				19BEF93D2BA220B700B7F2BB /* Raleway-ExtraBold.ttf in Resources */,
+				19BEF9482BA220B700B7F2BB /* Raleway-SemiBoldItalic.ttf in Resources */,
+				19BEF9392BA220B700B7F2BB /* Raleway-Black.ttf in Resources */,
+				19BEF9462BA220B700B7F2BB /* Raleway-Regular.ttf in Resources */,
+				19BEF9402BA220B700B7F2BB /* Raleway-ExtraLightItalic.ttf in Resources */,
+				19BEF9492BA220B700B7F2BB /* Raleway-Thin.ttf in Resources */,
+				19BEF9432BA220B700B7F2BB /* Raleway-LightItalic.ttf in Resources */,
+				19BEF93F2BA220B700B7F2BB /* Raleway-ExtraLight.ttf in Resources */,
+				19BEF93B2BA220B700B7F2BB /* Raleway-Bold.ttf in Resources */,
+				196F024E2B9E1DDE005CD9EF /* Preview Assets.xcassets in Resources */,
+				19BEF9442BA220B700B7F2BB /* Raleway-Medium.ttf in Resources */,
+				19BEF94A2BA220B700B7F2BB /* Raleway-ThinItalic.ttf in Resources */,
+				19BEF9472BA220B700B7F2BB /* Raleway-SemiBold.ttf in Resources */,
+				19BEF93C2BA220B700B7F2BB /* Raleway-BoldItalic.ttf in Resources */,
+				196F024B2B9E1DDE005CD9EF /* Assets.xcassets in Resources */,
+				19BEF93A2BA220B700B7F2BB /* Raleway-BlackItalic.ttf in Resources */,
+				19BEF94D2BA23D0D00B7F2BB /* Merriweather-Regular.ttf in Resources */,
+				19BEF9422BA220B700B7F2BB /* Raleway-Light.ttf in Resources */,
+				196F029D2B9E8DA1005CD9EF /* GoogleService-Info.plist in Resources */,
+				19BEF9452BA220B700B7F2BB /* Raleway-MediumItalic.ttf in Resources */,
+				19BEF9412BA220B700B7F2BB /* Raleway-Italic.ttf in Resources */,
+				19BEF93E2BA220B700B7F2BB /* Raleway-ExtraBoldItalic.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		196F02512B9E1DDE005CD9EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		196F025B2B9E1DDE005CD9EF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		196F023F2B9E1DDC005CD9EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				196F02AF2B9F13B9005CD9EF /* EditProfileViewModel.swift in Sources */,
+				196F02BA2B9F3AC0005CD9EF /* CircularProfileImageView.swift in Sources */,
+				1971569B2B9FE02300FE4F2B /* SuccessView.swift in Sources */,
+				192EBBF82BA8951F00E81A7A /* LocationManager.swift in Sources */,
+				196F02AB2B9EA3F3005CD9EF /* SearchViewModel.swift in Sources */,
+				196F02742B9E20C1005CD9EF /* ProfileView.swift in Sources */,
+				19DD7EE72BA5ECA0003B7A3B /* ProfileHeaderViewModel.swift in Sources */,
+				196F027B2B9E3789005CD9EF /* LoginView.swift in Sources */,
+				196F02492B9E1DDC005CD9EF /* ContentView.swift in Sources */,
+				196F02B32B9F25FB005CD9EF /* ImageUploader.swift in Sources */,
+				196F02472B9E1DDC005CD9EF /* NatureQuestApp.swift in Sources */,
+				196F029B2B9E8639005CD9EF /* LoginViewModel.swift in Sources */,
+				196F2F2A2BA6FE5A005CF8A7 /* MapViewModel.swift in Sources */,
+				196F027F2B9E3C34005CD9EF /* SignUpView.swift in Sources */,
+				196F02C02B9F5A0E005CD9EF /* PostGridViewModel.swift in Sources */,
+				196F029F2B9E947C005CD9EF /* SearchView.swift in Sources */,
+				196F02A72B9E9FD4005CD9EF /* ProfileHeaderView.swift in Sources */,
+				196F02812B9E4163005CD9EF /* User.swift in Sources */,
+				196F02952B9E6F80005CD9EF /* AuthService.swift in Sources */,
+				19DD7ED92BA4AB90003B7A3B /* FilterView.swift in Sources */,
+				196F02BC2B9F4EB3005CD9EF /* FeedViewModel.swift in Sources */,
+				196F02762B9E2D18005CD9EF /* HomeView.swift in Sources */,
+				196F02782B9E2D23005CD9EF /* PostView.swift in Sources */,
+				196F02712B9E1E0A005CD9EF /* MainTabView.swift in Sources */,
+				196F02A52B9E9DB1005CD9EF /* PostGridView.swift in Sources */,
+				196674592B9F6F2500FC814B /* Preview Content.swift in Sources */,
+				196F02A92B9EA32C005CD9EF /* UserService.swift in Sources */,
+				19BEF94F2BA26FC300B7F2BB /* SuccessViewModel.swift in Sources */,
+				196F02BE2B9F568B005CD9EF /* PostService.swift in Sources */,
+				1971569D2B9FEC8200FE4F2B /* IdentifyView.swift in Sources */,
+				1971569F2B9FF27200FE4F2B /* MapView.swift in Sources */,
+				192EBBFA2BA8B22C00E81A7A /* temp.swift in Sources */,
+				1966745B2B9F76BA00FC814B /* PostDetailsView.swift in Sources */,
+				196F02992B9E7EDC005CD9EF /* RegistrationViewModel.swift in Sources */,
+				196F02972B9E7117005CD9EF /* ContentViewModel.swift in Sources */,
+				19DD7EDB2BA4BE28003B7A3B /* IdentifyViewModel.swift in Sources */,
+				196F02B12B9F16E1005CD9EF /* UploadPostViewModel.swift in Sources */,
+				196F02872B9E69E4005CD9EF /* ImagePicker.swift in Sources */,
+				196F02852B9E62C0005CD9EF /* ObservationView.swift in Sources */,
+				19DD7EE92BA61E26003B7A3B /* SuccessViewModelManager.swift in Sources */,
+				191938E72B9F97ED0096CD32 /* AuthenticationView.swift in Sources */,
+				196F02AD2B9F0CF0005CD9EF /* EditiProfileView.swift in Sources */,
+				196F02832B9E44C0005CD9EF /* Post.swift in Sources */,
+				196F02A12B9E9869005CD9EF /* CurrentUserProfileView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		196F024F2B9E1DDE005CD9EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				196F02582B9E1DDE005CD9EF /* NatureQuestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		196F02592B9E1DDE005CD9EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				196F02642B9E1DDE005CD9EF /* NatureQuestUITestsLaunchTests.swift in Sources */,
+				196F02622B9E1DDE005CD9EF /* NatureQuestUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		196F02552B9E1DDE005CD9EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 196F02422B9E1DDC005CD9EF /* NatureQuest */;
+			targetProxy = 196F02542B9E1DDE005CD9EF /* PBXContainerItemProxy */;
+		};
+		196F025F2B9E1DDE005CD9EF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 196F02422B9E1DDC005CD9EF /* NatureQuest */;
+			targetProxy = 196F025E2B9E1DDE005CD9EF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		196F02652B9E1DDE005CD9EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		196F02662B9E1DDE005CD9EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		196F02682B9E1DDE005CD9EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 7HG9XB9XZZ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NatureQuest/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs your location to show the species around you.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Michela-Mullins.NatureQuest";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		196F02692B9E1DDE005CD9EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 7HG9XB9XZZ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NatureQuest/Info.plist;
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "This app needs your location to show the species around you.";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Michela-Mullins.NatureQuest";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		196F026B2B9E1DDE005CD9EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7HG9XB9XZZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Michela-Mullins.NatureQuestTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NatureQuest.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NatureQuest";
+			};
+			name = Debug;
+		};
+		196F026C2B9E1DDE005CD9EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7HG9XB9XZZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Michela-Mullins.NatureQuestTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NatureQuest.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NatureQuest";
+			};
+			name = Release;
+		};
+		196F026E2B9E1DDE005CD9EF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7HG9XB9XZZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Michela-Mullins.NatureQuestUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NatureQuest;
+			};
+			name = Debug;
+		};
+		196F026F2B9E1DDE005CD9EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 7HG9XB9XZZ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Michela-Mullins.NatureQuestUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = NatureQuest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		196F023E2B9E1DDC005CD9EF /* Build configuration list for PBXProject "NatureQuest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				196F02652B9E1DDE005CD9EF /* Debug */,
+				196F02662B9E1DDE005CD9EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		196F02672B9E1DDE005CD9EF /* Build configuration list for PBXNativeTarget "NatureQuest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				196F02682B9E1DDE005CD9EF /* Debug */,
+				196F02692B9E1DDE005CD9EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		196F026A2B9E1DDE005CD9EF /* Build configuration list for PBXNativeTarget "NatureQuestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				196F026B2B9E1DDE005CD9EF /* Debug */,
+				196F026C2B9E1DDE005CD9EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		196F026D2B9E1DDE005CD9EF /* Build configuration list for PBXNativeTarget "NatureQuestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				196F026E2B9E1DDE005CD9EF /* Debug */,
+				196F026F2B9E1DDE005CD9EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		196F028A2B9E6E54005CD9EF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.22.1;
+			};
+		};
+		196F02B42B9F39FB005CD9EF /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.11.0;
+			};
+		};
+		19DD7EDC2BA4E0CA003B7A3B /* XCRemoteSwiftPackageReference "NotificationBanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Daltron/NotificationBanner";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.2.1;
+			};
+		};
+		19DD7EE32BA50989003B7A3B /* XCRemoteSwiftPackageReference "SwiftEntryKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/huri000/SwiftEntryKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		196F028B2B9E6E54005CD9EF /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 196F028A2B9E6E54005CD9EF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		196F028D2B9E6E54005CD9EF /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 196F028A2B9E6E54005CD9EF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		196F028F2B9E6E54005CD9EF /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 196F028A2B9E6E54005CD9EF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		196F02922B9E6E82005CD9EF /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 196F028A2B9E6E54005CD9EF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		196F02B52B9F39FB005CD9EF /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 196F02B42B9F39FB005CD9EF /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		19BABEEE2B9FC91E0058C04E /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 196F028A2B9E6E54005CD9EF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		19DD7EDD2BA4E0CA003B7A3B /* NotificationBannerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 19DD7EDC2BA4E0CA003B7A3B /* XCRemoteSwiftPackageReference "NotificationBanner" */;
+			productName = NotificationBannerSwift;
+		};
+		19DD7EE42BA50989003B7A3B /* SwiftEntryKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 19DD7EE32BA50989003B7A3B /* XCRemoteSwiftPackageReference "SwiftEntryKit" */;
+			productName = SwiftEntryKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 196F023B2B9E1DDC005CD9EF /* Project object */;
+}
