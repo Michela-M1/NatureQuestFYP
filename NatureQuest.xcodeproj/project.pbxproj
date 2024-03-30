@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		191938E72B9F97ED0096CD32 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 191938E62B9F97ED0096CD32 /* AuthenticationView.swift */; };
 		192EBBF82BA8951F00E81A7A /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192EBBF72BA8951F00E81A7A /* LocationManager.swift */; };
-		192EBBFA2BA8B22C00E81A7A /* temp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 192EBBF92BA8B22C00E81A7A /* temp.swift */; };
 		196674592B9F6F2500FC814B /* Preview Content.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196674582B9F6F2500FC814B /* Preview Content.swift */; };
 		1966745B2B9F76BA00FC814B /* PostDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1966745A2B9F76BA00FC814B /* PostDetailsView.swift */; };
 		196F02472B9E1DDC005CD9EF /* NatureQuestApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 196F02462B9E1DDC005CD9EF /* NatureQuestApp.swift */; };
@@ -106,7 +105,6 @@
 /* Begin PBXFileReference section */
 		191938E62B9F97ED0096CD32 /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
 		192EBBF72BA8951F00E81A7A /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
-		192EBBF92BA8B22C00E81A7A /* temp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = temp.swift; sourceTree = "<group>"; };
 		196674582B9F6F2500FC814B /* Preview Content.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Preview Content.swift"; sourceTree = "<group>"; };
 		1966745A2B9F76BA00FC814B /* PostDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetailsView.swift; sourceTree = "<group>"; };
 		196F02432B9E1DDC005CD9EF /* NatureQuest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NatureQuest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -175,7 +173,7 @@
 		19BEF94E2BA26FC300B7F2BB /* SuccessViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessViewModel.swift; sourceTree = "<group>"; };
 		19DD7ED82BA4AB90003B7A3B /* FilterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterView.swift; sourceTree = "<group>"; };
 		19DD7EDA2BA4BE28003B7A3B /* IdentifyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IdentifyViewModel.swift; sourceTree = "<group>"; };
-		19DD7EE62BA5ECA0003B7A3B /* ProfileHeaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileHeaderViewModel.swift; path = NatureQuest/ProfileHeaderViewModel.swift; sourceTree = "<group>"; };
+		19DD7EE62BA5ECA0003B7A3B /* ProfileHeaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderViewModel.swift; sourceTree = "<group>"; };
 		19DD7EE82BA61E26003B7A3B /* SuccessViewModelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessViewModelManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -215,8 +213,6 @@
 		196F023A2B9E1DDC005CD9EF = {
 			isa = PBXGroup;
 			children = (
-				19DD7EE62BA5ECA0003B7A3B /* ProfileHeaderViewModel.swift */,
-				1971569E2B9FF27200FE4F2B /* MapView.swift */,
 				196F02452B9E1DDC005CD9EF /* NatureQuest */,
 				196F02562B9E1DDE005CD9EF /* NatureQuestTests */,
 				196F02602B9E1DDE005CD9EF /* NatureQuestUITests */,
@@ -238,64 +234,39 @@
 		196F02452B9E1DDC005CD9EF /* NatureQuest */ = {
 			isa = PBXGroup;
 			children = (
-				19DD7EE82BA61E26003B7A3B /* SuccessViewModelManager.swift */,
+				196F02462B9E1DDC005CD9EF /* NatureQuestApp.swift */,
 				19BEF94B2BA2219300B7F2BB /* Info.plist */,
-				19BEF9382BA220B700B7F2BB /* Fonts */,
+				196F029C2B9E8DA1005CD9EF /* GoogleService-Info.plist */,
 				196674582B9F6F2500FC814B /* Preview Content.swift */,
 				196F024D2B9E1DDE005CD9EF /* Preview Assets.xcassets */,
-				196F029C2B9E8DA1005CD9EF /* GoogleService-Info.plist */,
-				196F02462B9E1DDC005CD9EF /* NatureQuestApp.swift */,
-				196F02792B9E3744005CD9EF /* ViewModel */,
-				196F02962B9E7117005CD9EF /* ContentViewModel.swift */,
-				196F02AE2B9F13B9005CD9EF /* EditProfileViewModel.swift */,
-				196F02BB2B9F4EB3005CD9EF /* FeedViewModel.swift */,
-				196F029A2B9E8639005CD9EF /* LoginViewModel.swift */,
-				19BEF94E2BA26FC300B7F2BB /* SuccessViewModel.swift */,
-				196F02BF2B9F5A0E005CD9EF /* PostGridViewModel.swift */,
-				196F02B02B9F16E1005CD9EF /* UploadPostViewModel.swift */,
-				19DD7EDA2BA4BE28003B7A3B /* IdentifyViewModel.swift */,
-				196F02AA2B9EA3F3005CD9EF /* SearchViewModel.swift */,
-				196F02982B9E7EDC005CD9EF /* RegistrationViewModel.swift */,
-				196F024C2B9E1DDE005CD9EF /* View */,
-				191938E62B9F97ED0096CD32 /* AuthenticationView.swift */,
-				19DD7ED82BA4AB90003B7A3B /* FilterView.swift */,
-				196F02B92B9F3AC0005CD9EF /* CircularProfileImageView.swift */,
-				196F02482B9E1DDC005CD9EF /* ContentView.swift */,
-				196F02752B9E2D18005CD9EF /* HomeView.swift */,
-				196F02A02B9E9869005CD9EF /* CurrentUserProfileView.swift */,
-				196F02AC2B9F0CF0005CD9EF /* EditiProfileView.swift */,
-				196F027A2B9E3789005CD9EF /* LoginView.swift */,
-				196F02702B9E1E0A005CD9EF /* MainTabView.swift */,
-				196F02842B9E62C0005CD9EF /* ObservationView.swift */,
-				192EBBF92BA8B22C00E81A7A /* temp.swift */,
-				192EBBF72BA8951F00E81A7A /* LocationManager.swift */,
-				196F02772B9E2D23005CD9EF /* PostView.swift */,
-				1966745A2B9F76BA00FC814B /* PostDetailsView.swift */,
-				1971569C2B9FEC8200FE4F2B /* IdentifyView.swift */,
-				196F02A42B9E9DB1005CD9EF /* PostGridView.swift */,
-				196F02A62B9E9FD4005CD9EF /* ProfileHeaderView.swift */,
-				1971569A2B9FE02300FE4F2B /* SuccessView.swift */,
-				196F02732B9E20C1005CD9EF /* ProfileView.swift */,
-				196F029E2B9E947C005CD9EF /* SearchView.swift */,
-				196F027E2B9E3C34005CD9EF /* SignUpView.swift */,
+				196F02792B9E3744005CD9EF /* Main */,
+				19CA16672BB78FEF00C78CB6 /* Profile */,
+				196F024C2B9E1DDE005CD9EF /* Home */,
+				19CA16662BB78F9800C78CB6 /* Authentication */,
+				19CA16692BB790C600C78CB6 /* Map */,
+				19CA166A2BB7911000C78CB6 /* Success */,
+				19CA16682BB790A400C78CB6 /* Observation */,
 				196F02722B9E20AC005CD9EF /* Service */,
-				196F02942B9E6F80005CD9EF /* AuthService.swift */,
-				196F02BD2B9F568B005CD9EF /* PostService.swift */,
-				196F02A82B9EA32C005CD9EF /* UserService.swift */,
+				19BEF9382BA220B700B7F2BB /* Fonts */,
 				196F024A2B9E1DDE005CD9EF /* Assets.xcassets */,
-				196F02862B9E69E4005CD9EF /* ImagePicker.swift */,
-				196F02B22B9F25FB005CD9EF /* ImageUploader.swift */,
 				196F02822B9E44C0005CD9EF /* Post.swift */,
 				196F02802B9E4163005CD9EF /* User.swift */,
 			);
 			path = NatureQuest;
 			sourceTree = "<group>";
 		};
-		196F024C2B9E1DDE005CD9EF /* View */ = {
+		196F024C2B9E1DDE005CD9EF /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				19DD7EDA2BA4BE28003B7A3B /* IdentifyViewModel.swift */,
+				196F02BB2B9F4EB3005CD9EF /* FeedViewModel.swift */,
+				196F02772B9E2D23005CD9EF /* PostView.swift */,
+				196F02752B9E2D18005CD9EF /* HomeView.swift */,
+				19DD7ED82BA4AB90003B7A3B /* FilterView.swift */,
+				1971569C2B9FEC8200FE4F2B /* IdentifyView.swift */,
+				1966745A2B9F76BA00FC814B /* PostDetailsView.swift */,
 			);
-			path = View;
+			path = Home;
 			sourceTree = "<group>";
 		};
 		196F02562B9E1DDE005CD9EF /* NatureQuestTests */ = {
@@ -318,16 +289,21 @@
 		196F02722B9E20AC005CD9EF /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				196F02942B9E6F80005CD9EF /* AuthService.swift */,
+				196F02BD2B9F568B005CD9EF /* PostService.swift */,
+				196F02A82B9EA32C005CD9EF /* UserService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
 		};
-		196F02792B9E3744005CD9EF /* ViewModel */ = {
+		196F02792B9E3744005CD9EF /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				196F2F292BA6FE5A005CF8A7 /* MapViewModel.swift */,
+				196F02702B9E1E0A005CD9EF /* MainTabView.swift */,
+				196F02962B9E7117005CD9EF /* ContentViewModel.swift */,
+				196F02482B9E1DDC005CD9EF /* ContentView.swift */,
 			);
-			path = ViewModel;
+			path = Main;
 			sourceTree = "<group>";
 		};
 		196F02912B9E6E82005CD9EF /* Frameworks */ = {
@@ -361,6 +337,67 @@
 				19BEF9372BA220B700B7F2BB /* Raleway-ThinItalic.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		19CA16662BB78F9800C78CB6 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				196F02982B9E7EDC005CD9EF /* RegistrationViewModel.swift */,
+				196F027E2B9E3C34005CD9EF /* SignUpView.swift */,
+				191938E62B9F97ED0096CD32 /* AuthenticationView.swift */,
+				196F027A2B9E3789005CD9EF /* LoginView.swift */,
+				196F029A2B9E8639005CD9EF /* LoginViewModel.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		19CA16672BB78FEF00C78CB6 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				19DD7EE62BA5ECA0003B7A3B /* ProfileHeaderViewModel.swift */,
+				196F02AE2B9F13B9005CD9EF /* EditProfileViewModel.swift */,
+				196F02BF2B9F5A0E005CD9EF /* PostGridViewModel.swift */,
+				196F02B92B9F3AC0005CD9EF /* CircularProfileImageView.swift */,
+				196F02A02B9E9869005CD9EF /* CurrentUserProfileView.swift */,
+				196F02AC2B9F0CF0005CD9EF /* EditiProfileView.swift */,
+				196F02A42B9E9DB1005CD9EF /* PostGridView.swift */,
+				196F02A62B9E9FD4005CD9EF /* ProfileHeaderView.swift */,
+				196F02732B9E20C1005CD9EF /* ProfileView.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		19CA16682BB790A400C78CB6 /* Observation */ = {
+			isa = PBXGroup;
+			children = (
+				196F02B02B9F16E1005CD9EF /* UploadPostViewModel.swift */,
+				196F02842B9E62C0005CD9EF /* ObservationView.swift */,
+				196F02862B9E69E4005CD9EF /* ImagePicker.swift */,
+				196F02B22B9F25FB005CD9EF /* ImageUploader.swift */,
+			);
+			path = Observation;
+			sourceTree = "<group>";
+		};
+		19CA16692BB790C600C78CB6 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				1971569E2B9FF27200FE4F2B /* MapView.swift */,
+				196F2F292BA6FE5A005CF8A7 /* MapViewModel.swift */,
+				196F02AA2B9EA3F3005CD9EF /* SearchViewModel.swift */,
+				196F029E2B9E947C005CD9EF /* SearchView.swift */,
+				192EBBF72BA8951F00E81A7A /* LocationManager.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		19CA166A2BB7911000C78CB6 /* Success */ = {
+			isa = PBXGroup;
+			children = (
+				19DD7EE82BA61E26003B7A3B /* SuccessViewModelManager.swift */,
+				19BEF94E2BA26FC300B7F2BB /* SuccessViewModel.swift */,
+				1971569A2B9FE02300FE4F2B /* SuccessView.swift */,
+			);
+			path = Success;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -560,7 +597,6 @@
 				196F02BE2B9F568B005CD9EF /* PostService.swift in Sources */,
 				1971569D2B9FEC8200FE4F2B /* IdentifyView.swift in Sources */,
 				1971569F2B9FF27200FE4F2B /* MapView.swift in Sources */,
-				192EBBFA2BA8B22C00E81A7A /* temp.swift in Sources */,
 				1966745B2B9F76BA00FC814B /* PostDetailsView.swift in Sources */,
 				196F02992B9E7EDC005CD9EF /* RegistrationViewModel.swift in Sources */,
 				196F02972B9E7117005CD9EF /* ContentViewModel.swift in Sources */,

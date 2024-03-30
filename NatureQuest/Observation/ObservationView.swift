@@ -136,10 +136,7 @@ struct ObservationView: View {
                         .font(.custom("Raleway-SemiBold", size: 32))
                 }
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    Button {
-                        //Info()
-                            
-                    } label: {
+                    NavigationLink(destination: Info()) {
                         Image("ic-info")
                     }
                 }

@@ -13,19 +13,22 @@ struct PostDetailsView: View {
     
     var post: Post
     
+    @State private var certaintyAlertVisible = false
+    
     var body: some View {
         VStack {
             HStack {
                 if let user = post.user {
                     // pp
-                    CircularProfileImageView(user: user, size: .small)
+                    NavigationLink(destination: ProfileView(user: user)) {
+                        CircularProfileImageView(user: user, size: .small)
+                    }
                     
                     VStack (alignment: .leading) {
                         // Username
                         Text(user.username)
                             .font(.custom("Raleway-SemiBold", size: 16))
 
-                        
                         // Location
                         if user.location?.isEmpty == false {
                             Text(user.location ?? "")
@@ -63,6 +66,16 @@ struct PostDetailsView: View {
                 // Icon
                 if let certainty = post.certainty {
                     CertaintyImageView(certainty: certainty)
+                        .onTapGesture {
+                            certaintyAlertVisible.toggle()
+                        }
+                        .alert(isPresented: $certaintyAlertVisible) {
+                            Alert(
+                                title: Text("Identification Certainty"),
+                                message: certaintyMessage(for: certainty),
+                                dismissButton: .default(Text("Got It"))
+                            )
+                        }
                 } else {
                     CertaintyImageView(certainty: 0)
                 }

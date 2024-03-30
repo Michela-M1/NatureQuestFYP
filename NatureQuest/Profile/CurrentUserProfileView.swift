@@ -22,7 +22,6 @@ struct CurrentUserProfileView: View {
         NavigationStack {
             ScrollView {
                 ProfileHeaderView(user: user)
-                
                 PostGridView(user: user)
             }
             .toolbar {

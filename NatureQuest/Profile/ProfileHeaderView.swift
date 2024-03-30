@@ -48,12 +48,13 @@ struct ProfileHeaderView: View {
                 //Bio
                 Text(bio)
                     .font(.custom("Raleway-Regular", size: 16))
-                
-                
+                    .multilineTextAlignment(.leading)
+                    
                 Text(pronouns)
-                    .font(.custom("Raleway-Regular", size: 16))
+                    .font(.custom("Raleway-Italic", size: 16))
                 
             }
+            .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: .leading)
         }
         .frame(width: 350)
         .onAppear {

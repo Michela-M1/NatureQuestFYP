@@ -29,6 +29,8 @@ struct MainTabView: View {
                         Image("ic-home")
                             .renderingMode(.template)
                     }.tag(0)
+                    .toolbarBackground(.visible, for: .tabBar)
+                    .toolbarBackground(Color.white, for: .tabBar)
                 
                 MapView()
                     .onAppear {
@@ -38,6 +40,8 @@ struct MainTabView: View {
                         Image("ic-explore")
                             .renderingMode(.template)
                     }.tag(1)
+                    .toolbarBackground(.visible, for: .tabBar)
+                    .toolbarBackground(Color.white, for: .tabBar)
                 
                 ObservationView(tabIndex: $selectedIndex, user: user)
                     .onAppear {
@@ -47,6 +51,8 @@ struct MainTabView: View {
                         Image("ic-observation")
                             .renderingMode(.template)
                     }.tag(2)
+                    .toolbarBackground(.visible, for: .tabBar)
+                    .toolbarBackground(Color.white, for: .tabBar)
                     .environmentObject(successViewModelManager)
                 
                 SuccessView(user: user)
@@ -57,6 +63,8 @@ struct MainTabView: View {
                         Image("ic-success")
                             .renderingMode(.template)
                     }.tag(3)
+                    .toolbarBackground(.visible, for: .tabBar)
+                    .toolbarBackground(Color.white, for: .tabBar)
                     .environmentObject(successViewModelManager)
                 
                 CurrentUserProfileView(user: user)
@@ -67,6 +75,8 @@ struct MainTabView: View {
                         Image("ic-profile")
                             .renderingMode(.template)
                     }.tag(4)
+                    .toolbarBackground(.visible, for: .tabBar)
+                    .toolbarBackground(Color.white, for: .tabBar)
             }
             
             VStack {

@@ -11,6 +11,8 @@ import Kingfisher
 struct PostView: View {
     var post: Post
     
+    @State private var certaintyAlertVisible = false
+    
     var body: some View {
         NavigationStack {
             ZStack {
@@ -18,7 +20,9 @@ struct PostView: View {
                     HStack {
                         if let user = post.user {
                             // pp
-                            CircularProfileImageView(user: user, size: .small)
+                            NavigationLink(destination: ProfileView(user: user)) {
+                                CircularProfileImageView(user: user, size: .small)
+                            }
                             
                             VStack (alignment: .leading) {
                                 // Username
@@ -65,6 +69,16 @@ struct PostView: View {
                         // Icon
                         if let certainty = post.certainty {
                             CertaintyImageView(certainty: certainty)
+                                .onTapGesture {
+                                    certaintyAlertVisible.toggle()
+                                }
+                                .alert(isPresented: $certaintyAlertVisible) {
+                                    Alert(
+                                        title: Text("Identification Certainty"),
+                                        message: certaintyMessage(for: certainty),
+                                        dismissButton: .default(Text("Got It"))
+                                    )
+                                }
                         } else {
                             CertaintyImageView(certainty: 0)
                         }

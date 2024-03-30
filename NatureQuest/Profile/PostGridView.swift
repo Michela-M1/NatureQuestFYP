@@ -27,11 +27,13 @@ struct PostGridView: View {
     var body: some View {
         LazyVGrid(columns: gridItems, spacing:2) {
             ForEach(viewModel.posts) { post in
-                KFImage(URL(string: post.imageUrl))
-                    .resizable()
-                    .scaledToFill()
-                    .frame(width: imageDimensions, height: imageDimensions)
-                    .clipped()
+                NavigationLink(destination: PostDetailsView(post: post)) {
+                    KFImage(URL(string: post.imageUrl))
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: imageDimensions, height: imageDimensions)
+                        .clipped()
+                }
             }
         }
     }

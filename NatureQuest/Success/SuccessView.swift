@@ -105,17 +105,20 @@ struct SuccessView: View {
                 
             }
             .padding(.horizontal, 20)
-            .navigationTitle("Success")
-            .navigationBarTitleDisplayMode(.inline)
             .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Text("Success")
+                        .font(.custom("Raleway-SemiBold", size: 32))
+                }
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    Image(systemName: "info.circle")
-                        .onTapGesture {
-                            viewModel.points += 100
-                            print(viewModel.points)
-                            Task { try await viewModel.updatePoints() }
-
-                        }
+                    Button {
+                        viewModel.points += 100
+                        print(viewModel.points)
+                        Task { try await viewModel.updatePoints() }
+                            
+                    } label: {
+                        Image("ic-info")
+                    }
                 }
             }
         }
@@ -153,6 +156,7 @@ struct ProgressBoxView: View {
 
 struct BadgeGridView: View {
     let badges: [Badge] = [
+        Badge(name: "badge9", description: "Record 100 species", isAccentColor: true, isLastBadge: true),
         Badge(name: "badge1", description: "Record 50 plants", isAccentColor: false, isLastBadge: false),
         Badge(name: "badge2", description: "Record 50 animals", isAccentColor: false, isLastBadge: false),
         Badge(name: "badge3", description: "Record 50 mushrooms", isAccentColor: false, isLastBadge: false),
@@ -161,9 +165,9 @@ struct BadgeGridView: View {
         Badge(name: "badge6", description: "Record 30 insects", isAccentColor: false, isLastBadge: false),
         Badge(name: "badge7", description: "Record 30 trees", isAccentColor: false, isLastBadge: false),
         Badge(name: "badge8", description: "Record 30 flowers", isAccentColor: false, isLastBadge: false),
-        Badge(name: "badge9", description: "Record 100 species", isAccentColor: true, isLastBadge: true),
     ]
     
+    @State private var lastBadgeRewardClaimed = false
     let onClaimReward: () -> Void
 
     @State private var selectedBadge: Badge?
@@ -176,6 +180,7 @@ struct BadgeGridView: View {
                         .onTapGesture {
                             selectedBadge = badge
                         }
+                        
                 }
             }
             .padding()
@@ -183,9 +188,15 @@ struct BadgeGridView: View {
             if let badge = selectedBadge {
                 BadgePopUpView(badge: badge, onClose: {
                     selectedBadge = nil
-                }, onClaimReward: onClaimReward)
+                }, onClaimReward: {
+                    // Handle claiming reward
+                    onClaimReward()
+                    if badge.isLastBadge {
+                        lastBadgeRewardClaimed = true
+                    }
+                    selectedBadge = nil // Close the popup after claiming reward
+                }, isClaimed: badge.isLastBadge && lastBadgeRewardClaimed)
                 .transition(.move(edge: .bottom))
-                //.animation(.easeInOut)
             }
         }
     }
@@ -215,6 +226,7 @@ struct BadgePopUpView: View {
     let badge: Badge
     let onClose: () -> Void
     let onClaimReward: () -> Void
+    let isClaimed: Bool
 
     var body: some View {
         GeometryReader { geometry in
@@ -235,7 +247,7 @@ struct BadgePopUpView: View {
                     .aspectRatio(contentMode: .fit)
                     //.frame(width: 200, height: 200)
                 
-                if badge.isLastBadge { // Add button for the last badge
+                if badge.isLastBadge && !isClaimed { // Add button for the last badge
                     Button(action: onClaimReward) {
                         Text("Claim reward")
                             .padding()
